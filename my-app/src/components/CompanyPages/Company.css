@@ -1,0 +1,35 @@
+.company-slider {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.heading{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cards {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border: 1px solid #ddd;
+    /* Border */
+    margin:0 10px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    /* Fixed card height */
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

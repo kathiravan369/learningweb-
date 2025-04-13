@@ -1,0 +1,166 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .dialog-box {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+  }
+  
+  .wrapper {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(83, 112, 82, 0.97), rgba(83, 112, 82, 0.97));
+    z-index: 10;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    z-index: 20;
+    padding: 6% 10%;
+    color: #fff;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: #eff0ed;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #eff0ed;
+  }
+  
+  .desc {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #eff0ed;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .submit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    padding: 12px 24px;
+    background-color: #365c32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .connect-img {
+    max-width: 45%;
+    height: auto;
+  }
+  
+  .snackbar {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    font-size: 14px;
+  }
+  
+  .snackbar.success {
+    background-color: #4caf50;
+  }
+  
+  .snackbar.error {
+    background-color: #f44336;
+  }
+  
+  .snackbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-container {
+    display: flex;
+    background-color: #e9e4d8; /* soft beige background */
+    border-radius: 30px;
+    overflow: hidden;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .toggle-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #5c5c5c;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .toggle-option.active {
+    background-color: #d6c6ac; /* soft highlight color */
+    color: black;
+    font-weight: bold;
+  }
+  

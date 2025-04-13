@@ -1,0 +1,176 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    position: relative;
+    width: 95%;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    z-index: 800;
+    margin: 0 auto;
+    border-radius:10px;
+}
+.navmain{
+    background: linear-gradient(to right, #e6f0ff, #b8d4ea);
+}
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoimg{
+    width:80px;
+    height:40px;
+   
+}
+
+/* Menu Items */
+.menu {
+    list-style: none;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    
+}
+
+.menu li {
+    cursor: pointer;
+    font-size:16px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li:hover {
+    color: #007bff;
+}
+
+.demo-btn {
+    background: linear-gradient(to left, #2cdf94, #122d5c);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.demo-btn:hover {
+    background-color: #0f8c4a;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 0;
+    z-index: 100;
+}
+
+.menu.active li {
+    margin: 10px 0;
+}
+.arrow-icon {
+    font-size: 14px;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(to right, #e6f0ff, #b8d4ea);
+    color:#122d5c;
+    text-align: center;
+    padding:70px 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.banner-content h1 {
+    font-size:65px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner-title{
+    font-size: 10px;
+}
+.banner-content .highlight {
+    color: #1a73e8;
+}
+
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #1a1dca;
+}
+
+.schedule-btn {
+    background-color:#2341a3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.schedule-btn:hover {
+    background-color: #135ab4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+      }
+}
+
+
+@media (max-width: 450px) {
+    .banner-content h1 {
+        font-size: 30px;
+      }
+      .banner-content p {
+        font-size: 16px;
+    }
+  }

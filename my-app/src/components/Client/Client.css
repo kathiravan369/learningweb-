@@ -1,0 +1,54 @@
+/* General styling */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    width:70%;
+    margin:30px auto;
+    background-color: #ecf4ee;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #318f39;
+    /* Greenish color */
+    margin-bottom: 10px;
+}
+.stat-value{
+    display: flex;
+    gap: 5px;
+}
+
+.star-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color:black;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        width:90%;
+    }
+
+   
+}
