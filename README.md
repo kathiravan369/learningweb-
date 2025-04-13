@@ -6,7 +6,7 @@ Clone the repo:
 
 Frontend Setup:
 
-    *  Navigate to the frontend folder: cd frontend
+    *  Navigate to the frontend folder: cd my-app
 
     *  Install dependencies: npm install
 
