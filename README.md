@@ -18,7 +18,7 @@ Backend Setup:
 
     *  Install dependencies: npm install
 
-    *  Start the server: npm start or node index.js
+    *  Start the server: npm start or node server.js
 
 MongoDB:
 
